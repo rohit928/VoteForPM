@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="podravski_red">#ffb50a2d</color>
+    <color name="grid_state_pressed2">#77b50a2d</color>
+    <color name="grid_state_focused2">#77b50a2d</color>
+    <color name="grid_state_pressed">#bb7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="greenblue">#ff23c59f</color>
+    <color name="green">#ff09a626</color>
+    <color name="lightbrown">#ffedab08</color>
+    <color name="lightgreen">#ff9ad50b</color>
+    <color name="orange">#ffef710a</color>
+    <color name="red">#ffe02521</color>
+    <color name="yellow">#fff4de16</color>
+    <color name="bb">#ffe98f73</color>
+    <color name="whi">#ffffffff</color>
+    <color name="asd">#ff8f62a1</color>
+</resources>

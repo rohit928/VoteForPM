@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flagback"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/header_x" >
+
+            <TextView
+                android:id="@+id/txt_header"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Vote For PM"
+                android:textColor="#ffffffff"
+                android:textSize="30.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linr_Pm_Detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:orientation="horizontal"
+            android:padding="5sp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5sp" >
+
+                <ImageView
+                    android:id="@+id/img_PM_Image"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/frame" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8sp" >
+
+                <TextView
+                    android:id="@+id/txt_name_PM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dip"
+                    android:text="Name"
+                    android:textColor="#040404"
+                    android:textSize="25dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <!-- Weather Information -->
+
+                <TextView
+                    android:id="@+id/txt_party"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/name"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="5dip"
+                    android:text="Party"
+                    android:textColor="#343434"
+                    android:textSize="15dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linr_Pm_Info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linr_Pm_Detail"
+            android:orientation="horizontal"
+            android:padding="5sp" >
+
+                <TextView
+                    android:id="@+id/txt_Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/name"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingTop="5dip"
+                    android:text="Year before brits took over India , there was only three criterias to become surve sarva of an empire. The first criteria was ability to gain respect from army and associates."
+                    android:textColor="#343434"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linr_Pm_Suggestion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linr_Pm_Info"
+            android:orientation="vertical"
+            android:padding="5sp" >
+
+            <TextView
+                android:id="@+id/txt_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingTop="5dip"
+                android:text="Write Your Name :"
+                android:textColor="#343434"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/txt_Suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingTop="5dip"
+                android:text="Suggestion :"
+                android:textColor="#343434"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_Suggestion"
+                android:layout_width="fill_parent"
+                android:layout_height="100sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linr_Pm_Activ_Your_Vote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linr_Pm_Suggestion"
+            android:orientation="vertical"
+            android:padding="5sp" >
+
+            <TextView
+                android:id="@+id/txt_Active_Your_Vote"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:gravity="right"
+                android:paddingTop="5dip"
+                android:text="Active Your Vote :"
+                android:textColor="#343434"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_Mail_Active_Your_Vote"
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:background="@drawable/mail" />
+
+                    <Button
+                        android:id="@+id/btn_Review_Your_Vote"
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:background="@drawable/review" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_Active_Your_Vote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonoff"
+                        android:gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

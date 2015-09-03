@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flag" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_x" >
+
+        <TextView
+            android:id="@+id/txt_header"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Vote For PM"
+            android:textColor="#ffffffff"
+            android:textSize="30.0sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5sp"
+        android:layout_above="@+id/adViewsnew"
+        android:listSelector="@drawable/list_selector"
+        android:padding="8sp"
+        android:scrollbars="none" />
+    
+   <com.google.ads.AdView
+        android:id="@+id/adViewsnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a1526774592a9d5"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID" >
+    </com.google.ads.AdView>
+
+</RelativeLayout>
